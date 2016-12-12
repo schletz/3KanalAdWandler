@@ -29,6 +29,6 @@ Pinout:
                       RESET |1    8| VCC
 Analog in Channel 2 --> PB3 |2    7| PB2 <-- Analog in Channel 1
 Analog in Channel 3 --> PB4 |3    6| PB1 --> UART TX
-                        GND |4    5| PB0 --> Ms Takt (Toggle bei Compare Match)
+                        GND |4    5| PB0 --> Ms Takt (Toggle nach jeder ms)
                             +------+
 </pre>
