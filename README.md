@@ -3,7 +3,7 @@
 Liest jede Millisekunde den Analogwert der Pins PC2, PB3 und PB4 und sendet ihn mit einem 
 ms Timecode über den UART Pin. Am Anfang wird der Wert der internen 1.1 V Referenzspannung
 in Bezug zur Betriebsspannung gemessen. So kann der absolute Spannungswert berechnet werden.
-       
+<pre>
 Wichtig für das Programmieren von neuen Chips: Beim Attiny muss, um einen 16 MHz Takt zu 
 erhalten, die Fuse CLCK DIV8 deaktiviert werden. Danach muss der Wert von OSCILLATOR_CAL 
 so gesetzt werden, dass die CPU mit einem Takt von 7.3728 MH arbeitet. So kann mit 
@@ -30,3 +30,4 @@ Analog in Channel 2 --> PB3 |2    7| PB2 <-- Analog in Channel 1
 Analog in Channel 3 --> PB4 |3    6| PB1 --> UART TX
                         GND |4    5| PB0 --> Ms Takt (Toggle bei Compare Match)
                             +------+
+</pre>
