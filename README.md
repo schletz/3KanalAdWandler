@@ -1,4 +1,4 @@
-# Crashwagerl
+# 3 Kanal AD Wandler (für das Experiment "Crashwagerl")
 <pre>
 3 Kanal 10bit A/D Wandler mit Samplingintervall von 1 ms und 460 800 bit/s UART.
 Liest jede Millisekunde den Analogwert der Pins PC2, PB3 und PB4 und sendet ihn mit einem 
