@@ -5,7 +5,7 @@ Liest jede Millisekunde den Analogwert der Pins PC2, PB3 und PB4 und sendet ihn 
 ms Timecode über den UART Pin. Am Anfang wird der Wert der internen 1.1 V Referenzspannung
 in Bezug zur Betriebsspannung gemessen. So kann der absolute Spannungswert berechnet werden.
 
-Wichtig für das Programmieren von neuen Chips: Beim Attiny muss, um einen 16 MHz Takt zu 
+Wichtig für das Programmieren von neuen Chips: Beim Attiny muss, um einen 8 MHz Takt zu 
 erhalten, die Fuse CLCK DIV8 deaktiviert werden. Danach muss der Wert von OSCILLATOR_CAL 
 so gesetzt werden, dass die CPU mit einem Takt von 7.3728 MH arbeitet. So kann mit 
 460 800 bit/s übertragen werden.
@@ -23,7 +23,7 @@ Die Decodierung kann so erfolgen:
             TIMECODE = 64 * TIMECODE + DEZIMALWERT DES ZEICHENS
 Eine C Musterimplementierung ist in der Funktion base64Decode in der Headerdatei.
 Die Dezimalwerte der Zeichen können auf [https://de.wikipedia.org/wiki/Base64] unter
-Base64-Zeichensatz nachgelesen werden. Folgende Beispiele zeichen die decodierten Werte:
+Base64-Zeichensatz nachgelesen werden.
 Pinout:
                             +------+
                       RESET |1    8| VCC
