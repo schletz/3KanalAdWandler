@@ -6,8 +6,8 @@ ms Timecode über den UART Pin. Am Anfang wird der Wert der internen 1.1 V Refer
 in Bezug zur Betriebsspannung gemessen. So kann der absolute Spannungswert berechnet werden.
 
 Wichtig für das Programmieren von neuen Chips: Beim Attiny muss, um einen 8 MHz Takt zu 
-erhalten, die Fuse CLCK DIV8 deaktiviert werden. Danach muss der Wert von OSCILLATOR_CAL 
-so gesetzt werden, dass die CPU mit einem Takt von 7.3728 MH arbeitet. So kann mit 
+erhalten, die Fuse <code>CLCK DIV8</code> deaktiviert werden. Danach muss der Wert von <code>OSCILLATOR_CAL</code>
+so gesetzt werden, dass die CPU mit einem Takt von 7.3728 MHz arbeitet. So kann mit 
 460 800 bit/s übertragen werden.
 
 Die UART Nachricht ist ein ASCII String, der mit \r\n beendet wird. Die Werte für den 
